@@ -13,8 +13,9 @@
 <table class="table">
     <tr>
         <th>Изображение</th>
-        <th>Идентификатор</th>
-        <th>Дата</th>
+        <th>Вид дерева</th>
+        <th>Автор</th>
+        <th>Год отбора образцов</th>
     </tr>
 
     @foreach (var item in Model)
@@ -24,10 +25,13 @@
                 <img src="@("/Images/Previews/"+item.Id+".jpg")"  width="70" height="60" alt="Image" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Id)
+                @Html.DisplayFor(modelItem => item.Specie.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UploadDate)
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SamplingYear)
             </td>
         </tr>
     }
