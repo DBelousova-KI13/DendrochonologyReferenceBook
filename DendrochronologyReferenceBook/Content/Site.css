@@ -1,6 +1,71 @@
-﻿body {
+﻿.dh-navbar{
+    background-color: #e66e24;
+}
+
+.footer{
+    background-color: #505a6e;
+}
+
+.white-text a{
+    color: white;
+}
+
+
+.label a{
+    font-weight:bold;
+}
+
+
+
+.about-bg{
+    background-image: url(/Images/About/forest-682003_12802.png);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    color: white;
+    padding: 100px 50px;
+
+    text-align: center;
+    background-size: cover;
+}
+
+.about-bg h1{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.contact{
+    margin: 50px 15px;
+    align-content:center;
+    vertical-align: central;
+}
+
+.contact-center{
+    text-align: center;
+}
+
+.contact-name{
+    margin: 0px;
+}
+
+.contact-title{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+body {
     padding-top: 50px;
-    padding-bottom: 20px;
+
 }
 
 /* Set padding to keep content from hitting the edges */
